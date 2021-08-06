@@ -1,16 +1,64 @@
+/*paletas de colores propidades personalizadas*/
+:root{
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario: #FFC107;
+    --secundario:#0097A7;
+    --gris: #757575;
+    
+}
+
 html {
     font-size: 62.5%;
 }
 body {
 
     font-size: 16px;   /* 1rem = 10px*/
+   /* font-family: 'Oleo Script', cursive;*/
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .titulo {
     text-align: center;
     font-size: 3.8rem;
-
+    
 }
 
-.titulo {
+.titulo span {
     font-size: 2rem;
 }
+
+.contenedor {
+    width: 120rem;
+    margin:0 auto ;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+
+}
+.navegacion-principal {
+   
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-principal a {
+  
+  padding: 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navegacion-principal a:hover {
+ 
+    background-color: var(--primario);
+}
+
+@media (min-width: 480px){ 
+ body{
+     background-color:blue;
+  }
+}
+    
